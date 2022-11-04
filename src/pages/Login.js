@@ -12,7 +12,6 @@ function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {  
-    localStorage.clear();
     let token = localStorage.getItem("token");
 
     if (token && token !== "undefined") {

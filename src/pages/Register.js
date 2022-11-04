@@ -13,6 +13,7 @@ function Register() {
   const navigate = useNavigate()
 
   useEffect(() => {
+    localStorage.clear();
     dispatch(registerAction.resetForm());
 
     let token = localStorage.getItem('token');
